@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f7f7f9"
+              android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rl_network_tip"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:background="#FFF3C9">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:text="当前无网络，以下订单信息有可能不是最新的，请尽快联网!"/>
+    </RelativeLayout>
+    <include
+        android:id="@+id/view_bga"
+        layout="@layout/layout_bgarefresh_list"/>
+    <include
+        android:id="@+id/empty_view"
+        layout="@layout/layout_empty_view"/>
+</LinearLayout>

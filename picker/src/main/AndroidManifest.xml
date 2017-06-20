@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="cn.bingoogolapple.photopicker">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+        <!--图片预览界面-->
+        <activity
+            android:name="cn.bingoogolapple.photopicker.activity.BGAPhotoPreviewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/BGAPPTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!--图片选择界面-->
+        <activity
+            android:name="cn.bingoogolapple.photopicker.activity.BGAPhotoPickerActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/BGAPPTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!--图片选择预览界面-->
+        <activity
+            android:name="cn.bingoogolapple.photopicker.activity.BGAPhotoPickerPreviewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/BGAPPTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+    </application>
+
+</manifest>

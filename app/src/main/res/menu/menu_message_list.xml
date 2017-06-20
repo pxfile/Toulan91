@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_message_contact"
+        android:orderInCategory="100"
+        android:title="联系人"
+        android:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/item_message_qunzu"
+        android:orderInCategory="100"
+        android:title="群组"
+        android:showAsAction="ifRoom"/>
+    <!--<item-->
+        <!--android:id="@+id/item_message_more"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="更多"-->
+        <!--android:showAsAction="ifRoom"/>-->
+</menu>

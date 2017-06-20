@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main_frame_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/main_frame_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/c_d1d1d1"/>
+        <com.flyco.tablayout.CommonTabLayout
+            xmlns:tab="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/main_tablayout"
+            android:layout_below="@id/main_frame_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/c_f7f7f7"
+            tab:tl_iconHeight="25dp"
+            tab:tl_iconWidth="25dp"
+            tab:tl_indicator_color="@color/c_00aeff"
+            tab:tl_indicator_height="0dp"
+            tab:tl_textSelectColor="@color/c_00aeff"
+            tab:tl_textUnselectColor="@color/c_868686"
+            tab:tl_textsize="12sp"
+            tab:tl_underline_height="0dp" />
+    </RelativeLayout>
+
+    <com.toulan.view.DisableViewPager
+        android:id="@+id/main_fragment_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_frame_bottom"/>
+</RelativeLayout>

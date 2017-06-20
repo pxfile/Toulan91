@@ -1,0 +1,70 @@
+<resources
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="android:windowActionBar" tools:targetApi="11">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- Support library compatibility -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="ThemeWelcomeActivity" parent="AppTheme.NoActionBar">
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="21">true</item>
+        <item name="android:statusBarColor" tools:targetApi="21">@android:color/black</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/pic_welcome</item>
+    </style>
+
+    <!-- 自定义对话框-->
+    <style name="DiyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- job text-->
+    <style name="MyJobText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <!-- job text-->
+    <style name="OrderDetailText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- submit et-->
+    <style name="OrderSubmitInput">
+        <item name="android:background">@drawable/et_order_submit</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">2</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#08CBF9</item>
+    </style>
+
+    <style name="more_item_style">
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/demo_setting_single_bg</item>
+    </style>
+</resources>

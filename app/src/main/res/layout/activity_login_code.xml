@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/tv_login_code_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        tools:text="138 1111 2222"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:text="@string/str_login_code_send_tip"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <com.jungly.gridpasswordview.GridPasswordView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/gpv_login_code"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            app:gpvTextColor="@color/black"
+            app:gpvTextSize="18sp"
+            app:gpvLineColor="@color/colorAccent"
+            app:gpvLineWidth="1dp"
+            app:gpvGridColor="@color/white"
+            app:gpvPasswordLength="4"
+            app:gpvPasswordType="numberPassword"/>
+        <!--<EditText-->
+            <!--android:id="@+id/et_login_code"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_login_code_resend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="15dp"
+        android:text="@string/str_login_code_resend"/>
+
+    <Button
+        android:id="@+id/btn_login_next"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_normal_btn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:enabled="false"
+        android:text="@string/str_login_next"/>
+</LinearLayout>

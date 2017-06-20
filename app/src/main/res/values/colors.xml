@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03ccf5</color>
+    <color name="colorPrimaryDark">#03ccf5</color>
+    <color name="colorAccent">#03ccf5</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="c_03ccf3">#03ccf3</color>
+    <color name="c_03ccf5">#03ccf5</color>
+    <color name="c_323232">#323232</color>
+    <color name="c_999999">#999999</color>
+    <color name="c_dddddd">#dddddd</color>
+    <color name="c_04cafa">#04cafa</color>
+    <color name="c_d1d1d1">#d1d1d1</color>
+    <color name="c_f7f7f7">#f7f7f7</color>
+    <color name="c_00aeff">#00aeff</color>
+    <color name="c_868686">#868686</color>
+
+
+    <color name="c_progress1">#F6C701</color>
+    <color name="c_progress2">#02C9F0</color>
+
+    <color name="c_fe5f5e">#fe5f5e</color>
+    <!--00C8FA-->
+    <color name="c_03cbfa">#03cbfa</color>
+    <color name="c_638ee5">#638ee5</color>
+    <color name="c_ff5f5e">#ff5f5e</color>
+    <color name="c_ffb33e">#ffb33e</color>
+
+    <color name="more_bg_p">#f5f5f5</color>
+    <color name="more_bg_nor">#ffffff</color>
+    <color name="more_line_color">#cccccc</color>
+    <color name="common_bg_color">#F2F2F2</color>
+    <color name="common_line_color">#cccccc</color>
+
+    <!-- 群组 -->
+    <color name="tribe_host">#FFBD04 </color>
+    <color name="tribe_manager">#45D282 </color>
+
+</resources>

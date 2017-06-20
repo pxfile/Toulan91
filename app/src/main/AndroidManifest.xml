@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.toulan91">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- 获取读取通讯录记录的权限 -->
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- 用于优化GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+
+    <application
+        android:icon="@mipmap/app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name="com.toulan.TApplication"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.toulan.ui.activity.WelcomeActivity"
+            android:theme="@style/ThemeWelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.toulan.ui.activity.MainActivity"/>
+        <activity android:name="com.toulan.ui.activity.LoginActivity"
+                  android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:name="com.toulan.ui.activity.LoginCodeActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.toulan.ui.activity.OrderTimerActivity"/>
+        <activity android:name="com.toulan.ui.activity.ActivityContacts"/>
+        <activity android:name="com.toulan.ui.activity.ActivityTribe"/>
+        <activity android:name="com.toulan.ui.activity.OrderPicDetailActivity"
+            android:label="云检测图片"/>
+        <activity android:name="com.toulan.openIM.FindContactActivity"/>
+        <activity android:name="com.toulan.openIM.SearchTribeActivity"/>
+        <activity android:name="com.toulan.openIM.TribeInfoActivity"/>
+        <activity android:name="com.toulan.openIM.EditMyTribeProfileActivity"/>
+        <activity android:name="com.toulan.openIM.EditTribeInfoActivity"/>
+        <activity android:name="com.toulan.openIM.InviteTribeMemberActivity"/>
+        <activity android:name="com.toulan.openIM.TribeMembersActivity"/>
+        <activity android:name="com.toulan.openIM.TribeMsgRecTypeSetActivity"/>
+        <activity android:name="com.toulan.openIM.TribePersonalSettingActivity"/>
+        <activity android:name="com.toulan.openIM.TribeSystemMessageActivity"/>
+        <activity android:name="com.toulan.openIM.ContactSystemMessageActivity"/>
+        <activity android:name="com.toulan.openIM.SelectContactToSendCardActivity"/>
+        <activity android:name="com.toulan.openIM.YwUserInfoActivity"/>
+        <activity android:name="com.toulan.ui.activity.PayActivity"/>
+
+        <service android:name="com.toulan.ui.service.TLocationService"/>
+        <service android:name="com.toulan.ui.service.CountDownTimerService"/>
+        <service android:name="com.toulan.ui.service.UpdateService"/>
+        <service android:name="com.toulan.ui.service.UploadSmsCallService">
+            <intent-filter>
+                <action android:name="com.toulan.action.upload"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.toulan.alarm.LoongggAlarmReceiver">
+            <intent-filter>
+                <action android:name="com.toulan91.location.receiver"/>
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="ca23171ea3b266ace524695f5fde7b54" >
+        </meta-data>
+
+        <!--百度地图-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="tfA4cE1iztyleYXw6PNh0pN1CBEfQp2g"/>
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+        </service>
+        <!--百度地图-->
+        <!--鹰眼-->
+        <service
+            android:name="com.baidu.trace.LBSTraceService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <service android:name="com.toulan.ui.service.TraceService">
+            <intent-filter>
+                <action android:name="com.toulan.action_trace_service"/>
+            </intent-filter>
+        </service>
+
+        <!--云旺IM App Key: 23463438-->
+
+    </application>
+
+</manifest>

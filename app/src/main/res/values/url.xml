@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--测试地址-->
+    <string name="url">http://wap.91toulan.com/employee-erp/</string>
+    <!--线上地址-->
+    <!--<string name="url">http://h.employee.91toulan.com/employee-erp/</string>-->
+</resources>

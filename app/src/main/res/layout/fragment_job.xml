@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+        <ImageView
+            android:id="@+id/iv_job_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:contentDescription="扫码付款"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/pay_icon"/>
+        <ImageView
+            android:id="@+id/iv_job_pay1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:visibility="invisible"
+            android:src="@drawable/pay_icon"/>
+        <TextView
+            android:id="@+id/tv_job_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/iv_job_pay"
+            android:layout_toRightOf="@id/iv_job_pay1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:text="偷懒91"/>
+    </RelativeLayout>
+
+
+
+    <com.toulan.view.JobTabLayout
+        android:id="@+id/job_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0.1dp"
+        android:background="@color/colorAccent"/>
+
+    <com.toulan.view.DisableViewPager
+        android:id="@+id/vp_job"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
